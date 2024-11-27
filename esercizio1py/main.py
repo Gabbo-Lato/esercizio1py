@@ -13,7 +13,16 @@ def rimuovi():
     x = input("inserisci elemento da rimuovere\n")
     lista_spesa.remove(x)
 
+def conta():
+    x =  set(lista_spesa)
+    for i  in x :
+        if lista_spesa.count(i) > 1 :
+            print(f"Il numero {i} appare {lista_spesa.count(i)} volte.")
+        else :
+            print(f"Il numero {i} appare {lista_spesa.count(i)} volta.")
 
+def svuota_lista():
+    lista_spesa.clear()
 
 
      
