@@ -16,7 +16,7 @@
             <li>
                 {{ elemento }}
                 <form action="/rimuovi/{{ loop.index0 }}" method="post" style="display:inline;">
-                    <button type="submit">Rimuovi</button>
+                    <button type="submit" id ="rimuovi">Rimuovi</button>
                 </form>
             </li>
             {% endfor %}
