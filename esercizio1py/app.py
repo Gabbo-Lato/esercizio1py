@@ -36,6 +36,12 @@ def rimuovi(indice):
     db.session.commit() 
     return redirect(url_for('home'))
 
+@app.route('/svuota', methods=['POST'])
+def svuota():
+    ListaSpesa.query.delete() #COMMENTA ???
+    db.session.commit() #COMMENTA ???
+    return redirect(url_for('home'))
+
 #avvio dell'app Flask
 if __name__ == '__main__':
     app.run(debug=True)
